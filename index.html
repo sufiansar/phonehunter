@@ -11,21 +11,70 @@
 </head>
 
 <body>
-    <header class="container mx-auto">
-        <nav></nav>
-        <h1 class="text-4xl my-3 font-bold">Welcome To Phone Hunter</h1>
-        <div class="bg-gray-500 p-4 rounded-lg"><input id="input-Data" type="text" placeholder="Search..."
-                class="input w-full max-w-xs  " />
-            <button onclick="inPutData()" class="btn btn-accent">Search</button>
+    <section class="w-[1440] bg-[#0D6EFD0D]">
+        <nav class=" flex mt-3 bg-slate-500  rounded-lg text-white container mx-auto">
+            <div class="navbar ">
+                <div class="">
+                    <a class="btn btn-ghost text-xl">Hot Gadgets</a>
+                </div>
+            </div>
+            <div class="">
+                <a class="btn btn-primary text-lg p-2 m-3 ">SignUp</a>
+            </div>
+            </div>
+        </nav>
 
+        <div class="text-center my-3 text-white">
+            <h1 class="text-4xl my-3 font-bold ">Welcome To Phone Hunter</h1>
+            <p>There are many variations of passages of Lorem Ipsum available,<br> but the majority have suffered
+                alteration
+                in some form, by injected humou.</p>
+            <section class=" flex  justify-center ">
+                <div class="flex items-end -mb-64">
+                    <div class=""><img class="w-52 h-[438px]" src="pngwing 2.png" alt=""></div>
+                    <div class=""><img class="" src="pngwing 1.png" alt=""></div>
+                    <div class=""><img class="w-52 h-[438px]" src="pngwing 3.png" alt=""></div>
+
+                </div>
+            </section>
         </div>
+    </section>
 
-    </header>
+    <div class="bg-gray-500 p-4 rounded-lg text-center mt-80"><input id="input-Data" type="text" placeholder="Search..."
+            class="input w-full max-w-xs  " />
+        <button onclick="inPutData()" class="btn btn-accent">Search</button>
+
+    </div>
+
     <main>
+
         <section class="container">
+            <div id="loading-sping" class="text-center mt-24 hidden "><span
+                    class=" text-green-700  loading loading-spinner text-neutral"></span>
+            </div>
+
             <div id="phone-container" class=" grid grid-cols-1 md:grid-cols-2: lg:grid-cols-3 gap-2 my-5">
 
             </div>
+
+            <div id="show-all" class="container mt-4 hidden text-center mb-4 ">
+                <button onclick="showLLdata()" class="  btn btn-accent">Show All</button>
+            </div>
+            <!-- Open the modal using ID.showModal() method -->
+            <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                <div class="modal-box">
+
+                    <div id="show-all-container">
+
+                    </div>
+                    <div class="modal-action">
+                        <form method="dialog">
+                            <!-- if there is a button in form, it will close the modal -->
+                            <button class="btn">Close</button>
+                        </form>
+                    </div>
+                </div>
+            </dialog>
         </section>
     </main>
     <footer></footer>
